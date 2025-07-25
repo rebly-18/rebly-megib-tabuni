@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#0F172A] border-b border-gray-200 dark:border-gray-800 transition-all">
-      <nav className="container mx-auto flex justify-between items-center px-6 lg:px-16 py-4">
+      <nav className="container mx-auto flex justify-between items-center px-6 lg:px-16 sm:mb-4 md:mb-4 py-4">
         {/* Logo */}
         <h1 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">
           Tabuni<span className="text-teal-500">.dev</span>
