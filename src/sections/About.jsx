@@ -21,8 +21,8 @@ const About = () => {
           {/* Deskripsi */}
           <div className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed max-w-2xl">
             <p className="mb-4">
-              Dengan pengalaman lebih dari 3 tahun dalam pengembangan aplikasi web, saya menguasai pengembangan <span className="text-teal-500 font-semibold">Frontend</span> dan <span className="text-blue-500 font-semibold">Backend</span>.
-              Saya percaya kombinasi keterampilan teknis dan kreativitas adalah kunci untuk menciptakan produk digital yang unggul.
+              Saya Seorang Full-Stack Developer. Dengan pengalaman Freelance 3 tahun dalam pengembangan website, saya menguasai pengembangan <span className="text-teal-500 font-semibold">Frontend</span> dan{" "}
+              <span className="text-blue-500 font-semibold">Backend</span>. Saya percaya kombinasi keterampilan teknis dan kreativitas adalah kunci untuk menciptakan produk digital yang unggul.
             </p>
 
             {/* Riwayat Pendidikan */}
@@ -35,14 +35,9 @@ const About = () => {
                 <span className="font-semibold">Magang di Universitas Sains dan Teknologi Jayapura</span> (2024) - Pengembangan Aplikasi Web Pendataan Proposal.
               </li>
               <li>
-                <span className="font-semibold">SaCode Papua Community</span> (2023) - Kursus Pengembangan Aplikasi Web.
+                <span className="font-semibold">SaCode Papua Community</span> (2023) - Kursus Pengembangan Website dengan studi kasus Desain Website Ecommerce.
               </li>
             </ul>
-
-            {/* Tombol Download CV */}
-            <a href="/cv.pdf" download className="inline-block px-6 py-3 text-white font-semibold bg-gradient-to-r from-teal-500 to-blue-500 rounded-lg shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300">
-              Unduh CV Saya
-            </a>
           </div>
         </div>
       </div>

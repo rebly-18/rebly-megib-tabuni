@@ -13,13 +13,13 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-12 flex flex-col items-center justify-center text-center">
         {/* Social Icons */}
         <div className="flex space-x-6 mb-6">
-          <a href="https://github.com/USERNAME" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-teal-500 text-xl transition-colors duration-300">
+          <a href="https://github.com/rebly-18" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-teal-500 text-xl transition-colors duration-300">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/USERNAME" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-teal-500 text-xl transition-colors duration-300">
+          <a href="https://www.linkedin.com/in/reblytabuni22" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-teal-500 text-xl transition-colors duration-300">
             <FaLinkedin />
           </a>
-          <a href="mailto:your-email@example.com" className="text-gray-500 dark:text-gray-400 hover:text-teal-500 text-xl transition-colors duration-300">
+          <a href="mailto:anjasjr1922@gmail.com" className="text-gray-500 dark:text-gray-400 hover:text-teal-500 text-xl transition-colors duration-300">
             <FaEnvelope />
           </a>
         </div>

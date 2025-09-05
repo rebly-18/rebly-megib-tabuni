@@ -8,6 +8,8 @@ const Navbar = () => {
     return localStorage.getItem("theme") === "dark";
   });
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
   // Dark Mode toggle logic
   useEffect(() => {
     if (darkMode) {
@@ -19,6 +21,20 @@ const Navbar = () => {
     }
   }, [darkMode]);
 
+  // scroll listener
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const navLinks = [
     { name: "Beranda", path: "/" },
     { name: "Proyek", path: "/projects" },
@@ -27,7 +43,10 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#0F172A] border-b border-gray-200 dark:border-gray-800 transition-all">
+    <div
+      className={`w-full z-50  transition-all duration-400 ${isScrolled ? "sticky top-0 bg-white shadow-sm" : "relative bg-transparent"}
+      `}
+    >
       <nav className="container mx-auto flex justify-between items-center px-6 lg:px-16 sm:mb-4 md:mb-4 py-4">
         {/* Logo */}
         <h1 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">
@@ -82,7 +101,7 @@ const Navbar = () => {
           </NavLink>
         ))}
       </div>
-    </header>
+    </div>
   );
 };
 

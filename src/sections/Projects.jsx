@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import project1 from "../assets/img/proyek1/Cover-1.jpg";
+import project1 from "../assets/img/proyek3/portfolio.png";
 import project2 from "../assets/img/proyek2/movieapp.png";
-import project3 from "../assets/img/proyek3/portfolio.jpg";
+import project3 from "../assets/img/proyek1/Cover-1.jpg";
 
 const Projects = () => {
   const projects = [
@@ -9,23 +9,23 @@ const Projects = () => {
       image: project1,
       title: "Portfolio Website",
       desc: "Website pribadi menggunakan React + Tailwind CSS untuk menampilkan informasi diri, skills, dan proyek.",
-      tech: ["React", "Tailwind CSS"],
-      link: "#",
-      github: "#",
+      tech: ["React", "Tailwind CSS", "Framer Motion", "API GitHub"],
+      link: "https://tabuni-dev.vercel.app/",
+      github: "https://github.com/rebly-18/rebly-megib-tabuni",
     },
     {
       image: project2,
-      title: "Landing Page Produk",
-      desc: "Landing page modern responsif untuk promosi produk digital.",
-      tech: ["HTML", "Tailwind CSS", "JavaScript"],
+      title: "API Movie App",
+      desc: "Aplikasi web yang menampilkan data film dari API eksternal dengan fitur pencarian dan filter.",
+      tech: ["HTML", "Tailwind CSS", "Express.js", "API", "EJS"],
       link: "#",
       github: "#",
     },
     {
       image: project3,
-      title: "Dashboard Admin",
-      desc: "Aplikasi dashboard dengan autentikasi dan fitur manajemen data.",
-      tech: ["React", "Node.js", "API Integration"],
+      title: "Sistem Informasi Pendataan Proposal",
+      desc: "Sistem informasi berbasis web untuk mengelola dan mendata proposal menggunakan alpine.js, tailwindcss, laravel.",
+      tech: ["Alpine.js", "TailwindCSS", "Laravel"],
       link: "#",
       github: "#",
     },
